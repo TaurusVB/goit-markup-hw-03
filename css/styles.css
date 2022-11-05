@@ -1,0 +1,106 @@
+/* Колір основного тексту #757575*/
+/* Вторичний колір тексту #000000 */
+/* Основний колір фону #F5F5F5 */
+/* Вторичний колір фону #F5F4FA */
+/* Колір при ховері та фокусу #2196F3 */
+
+:root {
+    --main-color: #757575;
+    --secondary-color: #000000;
+    --main-background-color: #F5F5F5;
+    --secondary-background-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --title-color: #212121;
+    --white-color: #FFFFFF;
+}
+
+.page {
+    color: var(--main-color);
+    background-color: var(--main-background-color);
+}
+
+.logo {
+    color: var(--secondary-color);
+}
+
+.leftpart-logo {
+    color: #2196F3;
+}
+
+.list {
+    list-style: none;
+}
+
+/* site nav */
+.site-nav .link {
+    color: var(--title-color);
+}
+
+.footer-nav .link.adress {
+    color: #FFFFFF;
+}
+
+.auth-nav .link {
+    color: var(--main-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color)
+}
+
+.footer-nav .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.section-title {
+    color: var(--title-color);
+}
+
+/* our services */
+
+.services .title,
+.projects .title {
+    color: var(--title-color);
+}
+
+/* Button */
+
+.button {
+    color: var(--title-color);
+    background-color: var(--secondary-background-color);
+}
+
+.button.primary {
+    color: var(--white-color);
+    background-color: var(--accent-color);  
+}
+
+.button.secondary {
+    color: var(--title-color);
+    background-color:var(--secondary-background-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.button-list {
+
+}
+
+/* footer */
+
+.adress {
+    color: var(--white-color);
+}
