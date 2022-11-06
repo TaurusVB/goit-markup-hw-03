@@ -79,6 +79,7 @@
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
 }
 
 .site-nav .link:hover,
@@ -162,6 +163,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .projects .text {
@@ -195,9 +197,11 @@
 
 .button {
     color: var(--title-color);
-
     background-color: var(--secondary-background-color);
+
     font-family: inherit;
+    cursor: pointer;
+
 }
 
 .button.primary {
