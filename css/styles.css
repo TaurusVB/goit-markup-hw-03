@@ -40,6 +40,10 @@ body {
     color: var(--accent-color);
 }
 
+.footer .logo {
+    color: var(--white-text-color);
+}
+
 .list {
     list-style: none;
 }
