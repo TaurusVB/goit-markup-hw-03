@@ -12,19 +12,35 @@
     --accent-color: #2196F3;
     --title-color: #212121;
     --white-color: #FFFFFF;
+    --black-bg-color: #2F303A;
 }
 
 .page {
     color: var(--main-color);
     background-color: var(--main-background-color);
+
+    font-style: normal;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    
 }
 
+.page-header {
+    background-color: var(--white-color);
+}
 .logo {
     color: var(--secondary-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .leftpart-logo {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .list {
@@ -34,14 +50,35 @@
 /* site nav */
 .site-nav .link {
     color: var(--title-color);
-}
 
-.footer-nav .link.adress {
-    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .auth-nav .link {
     color: var(--main-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.footer-nav .link.adress {
+    color: var(--white-color);
+}
+
+
+.footer-nav .link {
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .site-nav .link:hover,
@@ -54,39 +91,136 @@
 }
 
 .site-nav .link.current {
-    color: var(--accent-color)
+    color: var(--accent-color);
 }
 
-.footer-nav .link {
-    color: rgba(255, 255, 255, 0.6);
+.hero-title {
+    color: var(--white-color);
+    font-style: 400;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero {
+    background-color: var(--black-bg-color);
 }
 
 .section-title {
     color: var(--title-color);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
-/* our services */
+/* our services and projects */
 
-.services .title,
+.services .title {
+    color: var(--title-color);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.services .text {
+    color: var(--main-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.services .text.position {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.projects .project {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.projects.list a {
+    text-decoration: none;
+}
+
+.projects .description {
+    color: var(--main-color)
+}
+
 .projects .title {
     color: var(--title-color);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.projects .text {
+    color: var(--main-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.team .title {
+    color: var(--title-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team .text {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* our team */
+
+.section.our-team {
+    background-color: var(--secondary-background-color);
 }
 
 /* Button */
 
 .button {
     color: var(--title-color);
+
     background-color: var(--secondary-background-color);
+    font-family: inherit;
 }
 
 .button.primary {
     color: var(--white-color);
-    background-color: var(--accent-color);  
+    background-color: var(--accent-color); 
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em; 
 }
 
 .button.secondary {
     color: var(--title-color);
     background-color:var(--secondary-background-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
 }
 
 .button.secondary:hover,
@@ -103,4 +237,8 @@
 
 .adress {
     color: var(--white-color);
+}
+
+.footer {
+    background-color: var(--black-bg-color);
 }
