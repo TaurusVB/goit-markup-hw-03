@@ -217,8 +217,8 @@ body {
 
 .button.primary:hover,
 .button.primary:focus {
-    color: var(--accent-color);
-    background-color: var(--main-background-color);
+    color: var(var(--white-text-color);
+    background-color: #188CE8;
 }
 
 
