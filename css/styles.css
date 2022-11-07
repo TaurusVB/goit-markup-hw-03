@@ -217,7 +217,6 @@ body {
 
 .button.primary:hover,
 .button.primary:focus {
-    color: var(var(--white-text-color);
     background-color: #188CE8;
 }
 
