@@ -194,7 +194,7 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-/* Button */
+/* Buttons */
 
 .button {
     color: var(--title-color);
@@ -214,6 +214,13 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em; 
 }
+
+.button.primary:hover,
+.button.primary:focus {
+    color: var(--accent-color);
+    background-color: var(--main-background-color);
+}
+
 
 .button.secondary {
     color: var(--title-color);
