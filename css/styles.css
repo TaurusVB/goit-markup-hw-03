@@ -463,7 +463,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 /* sections */
