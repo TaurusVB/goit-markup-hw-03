@@ -15,6 +15,11 @@
     --black-bg-color: #2F303A;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: var(--main-color);
     background-color: var(--main-background-color);
@@ -24,6 +29,12 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .logo {
@@ -40,16 +51,45 @@ body {
     color: var(--accent-color);
 }
 
-.footer .logo {
-    color: var(--white-text-color);
-}
-
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+.gray-line {
+    border: 1px solid #ECECEC;
+}
+/* Main nav */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.container.main-nav {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /* site nav */
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+/* .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+} */
+
 .site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
     color: var(--title-color);
 
     font-weight: 500;
@@ -58,7 +98,21 @@ body {
     text-decoration: none;
 }
 
+/* Auth nav */
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item + .item {
+    margin-left: 50px;
+}
+
 .auth-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
     color: var(--main-color);
 
     font-weight: 500;
@@ -92,7 +146,16 @@ body {
     color: var(--accent-color);
 }
 
+/* hero-title */
+
 .hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
     color: var(--white-text-color);
 
     font-weight: 900;
@@ -116,6 +179,9 @@ body {
 
 .hero {
     background-color: var(--black-bg-color);
+    text-align: center;
+    /* margin-bottom: 94px; */
+    padding-bottom: 200px;
 }
 
 .section-title {
@@ -127,9 +193,21 @@ body {
     text-align: center;
 }
 
-/* our services and projects */
+
+/* our services */
+
+.section.photo-work .section-title {
+    padding-top: 0;
+}
+
+.section .services {
+    /* margin-bottom: 94px; */
+    display: flex;
+}
 
 .services .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-color);
 
     font-weight: 700;
@@ -137,8 +215,27 @@ body {
     text-transform: uppercase;
 }
 
+.photo-work {
+    padding-bottom: 0;
+}
+
+/* .services.photo {
+    justify-content: space-between;
+} */
+
+.services.photo {
+    font-size: 0;
+}
+
+.works .text {
+    padding-bottom: 0;
+}
+
 .services .text {
     color: var(--main-color);
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .services .text.position {
@@ -146,13 +243,45 @@ body {
     line-height: 1.19;
 }
 
+.services .item {
+    width: 370px;
+    margin-right: 30px;
+}
+
+/* Projects */
+
 .projects .project {
     font-size: 16px;
     line-height: 1.88;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .item {
+    width: calc((100% - 60) - 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.projects .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
 .projects.list a {
     text-decoration: none;
+}
+
+.card-content {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top-color: transparent;
 }
 
 .projects .description {
@@ -160,6 +289,7 @@ body {
 }
 
 .projects .title {
+    padding-bottom: 4px;
     color: var(--title-color);
 
     font-weight: 700;
@@ -176,6 +306,9 @@ body {
 }
 
 .team .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
     color: var(--title-color);
 
     font-weight: 500;
@@ -184,13 +317,47 @@ body {
 }
 
 .team .text {
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    text-align: center;
     font-size: 16px;
     line-height: 1.19;
 }
 
 /* our team */
 
+.section-title.team {
+    padding-top: 94px;
+}
+
+.our-team {
+    margin-bottom: 0;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+.team .item {
+    font-size: 0;
+    background-color: var(--main-background-color);
+    margin-right: 0;
+    width: 270px;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team .item + .item {
+    margin-left: 30px;
+}
+
 .section.our-team {
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: var(--secondary-background-color);
 }
 
@@ -206,6 +373,8 @@ body {
 }
 
 .button.primary {
+    border: 0;
+    border-radius: 4px;
     color: var(--white-text-color);
     background-color: var(--accent-color); 
 
@@ -228,6 +397,10 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-color: transparent;
 }
 
 .button.secondary:hover,
@@ -235,6 +408,26 @@ body {
     color: var(--white-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.hero .button.primary {
+    padding: 10px 30px;
+}
+
+.button-list {
+    font-size: 0;
+    display: flex;
+    justify-content: center;  
+    /* margin-top: 94px; */
+    margin-bottom: 50px;  
+}
+
+.button-list .button.secondary {
+    padding: 6px 22px;
+}
+
+.button-list .item + .item {
+    margin-left: 8px;
 }
 
 /* footer */
@@ -247,3 +440,47 @@ body {
     background-color: var(--black-bg-color);
 }
 
+.footer .logo {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: var(--white-text-color);
+}
+
+.footer-nav .item {
+    margin-bottom: 9px;
+}
+
+.section-footer {
+    padding-bottom: 60px;
+}
+
+/* containers */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    outline: 1px solid blue;
+}
+
+/* sections */
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section .section-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
