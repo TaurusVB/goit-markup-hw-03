@@ -57,9 +57,6 @@ img {
     list-style: none;
 }
 
-.gray-line {
-    border: 1px solid #ECECEC;
-}
 /* Main nav */
 
 .main-nav {
@@ -68,8 +65,7 @@ img {
 }
 
 .container.main-nav {
-    padding-left: 15px;
-    padding-right: 15px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* site nav */
@@ -152,7 +148,6 @@ img {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     margin-top: 0;
@@ -180,8 +175,9 @@ img {
 .hero {
     background-color: var(--black-bg-color);
     text-align: center;
-    /* margin-bottom: 94px; */
+    
     padding-bottom: 200px;
+    padding-top: 200px;
 }
 
 .section-title {
@@ -201,7 +197,6 @@ img {
 }
 
 .section .services {
-    /* margin-bottom: 94px; */
     display: flex;
 }
 
@@ -217,14 +212,6 @@ img {
 
 .photo-work {
     padding-bottom: 0;
-}
-
-/* .services.photo {
-    justify-content: space-between;
-} */
-
-.services.photo {
-    font-size: 0;
 }
 
 .works .text {
@@ -248,6 +235,18 @@ img {
     margin-right: 30px;
 }
 
+.services .item:last-child {
+    margin-right: 0;
+}
+
+.services.photo .item {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.services.photo .item:last-child {
+    margin-right: 0;
+}
 /* Projects */
 
 .projects .project {
@@ -281,7 +280,7 @@ img {
 .card-content {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    border-top-color: transparent;
+    border-top-color: none;
 }
 
 .projects .description {
@@ -289,7 +288,7 @@ img {
 }
 
 .projects .title {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--title-color);
 
     font-weight: 700;
@@ -317,8 +316,7 @@ img {
 }
 
 .team .text {
-    margin-bottom: 30px;
-    margin-top: 10px;
+    padding-bottom: 30px;
 
     text-align: center;
     font-size: 16px;
@@ -338,7 +336,6 @@ img {
 .team {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .team .item {
@@ -356,8 +353,6 @@ img {
 }
 
 .section.our-team {
-    padding-top: 0;
-    padding-bottom: 0;
     background-color: var(--secondary-background-color);
 }
 
@@ -373,7 +368,7 @@ img {
 }
 
 .button.primary {
-    border: 0;
+    border: none;
     border-radius: 4px;
     color: var(--white-text-color);
     background-color: var(--accent-color); 
@@ -442,7 +437,6 @@ img {
 
 .footer .logo {
     display: inline-block;
-    margin-top: 60px;
     margin-bottom: 20px;
     color: var(--white-text-color);
 }
@@ -451,7 +445,12 @@ img {
     margin-bottom: 9px;
 }
 
+.footer-nav .item:last-child {
+    margin-bottom: 0;
+}
+
 .section-footer {
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -470,14 +469,10 @@ img {
 
 .section.no-padding {
     padding-top: 0;
-    padding-bottom: 0;
 }
 
 .section .section-title {
-    padding-top: 94px;
-    padding-bottom: 50px;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .section {
